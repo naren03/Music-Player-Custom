@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="styles.css" />
+		<title>Music Player</title>
+	</head>
+	<body>
+		<div class="player">
+			<div class="screen">
+				<img id="cover" src="img/Meri Ashiqui.jpg" alt="" />
+			</div>
+
+			<div class="controls">
+				<span class="prev"><i id="prev" class="fas fa-backward"></i></span>
+				<!-- <span class="pause"><i class="fas fa-pause"></i></span> -->
+				<span class="play"><i id="play" class="fas fa-play"></i></span>
+				<span class="next"><i id="next" class="fas fa-forward"></i></span>
+			</div>
+
+			<audio src="songs/Meri Ashiqui.mp3"></audio>
+
+			<div class="info">
+				<p class="name">Jubin Nautiyal</p>
+				<h3 id="song" class="song">Meri Ashiqui</h3>
+			</div>
+
+			<div id="progress" class="progress">
+				<div id="progress-bar" class="progress-bar"></div>
+			</div>
+
+			<div class="social">
+				<span class="like"><i id="like" class="far fa-heart"></i></span>
+				<span class="repeat"><i class="fas fa-redo-alt"></i></span>
+				<span class="shuffle"><i class="fas fa-random"></i></span>
+				<span class="share"><i class="fas fa-share-square"></i></span>
+			</div>
+		</div>
+		<!-- <i class="fas fa-heart"></i> -->
+
+		<script src="index.js"></script>
+	</body>
+</html>
